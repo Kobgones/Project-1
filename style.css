@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ringbearer;
+}
+
+#banner {
+    border: 1px solid black;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
+
+header div h1{
+    text-align: center; 
+    color: gold;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: gold;
+}
+
+li a{
+    color: gold;
+}
+
+li {
+    list-style-type: none;
+}
+
+#accueil{
+    border: 1px solid red;
+    height: 500px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
+
+#communaute{
+    border: 1px solid blue;
+    height: 500px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
+
+#quete{
+    border: 1px solid green;
+    height: 500px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
+
+#equipe{
+    border: 1px solid yellow;
+    height: 500px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
