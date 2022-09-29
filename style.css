@@ -5,8 +5,7 @@
 }
 
 #banner {
-    border: 1px solid black;
-    height: 120px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -18,11 +17,21 @@ header div h1{
     color: gold;
 }
 
+nav{
+    width: 100%;
+    position: fixed;
+    transition: all 0.3s ease-out;
+}
+
 ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     color: gold;
+    border: 1px solid black;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(114, 24, 24, 0.581));
+    height: 30px;
 }
 
 li a{
@@ -33,25 +42,25 @@ li {
     list-style-type: none;
 }
 
-#accueil{
+#home{
     border: 1px solid red;
     height: 500px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
 }
 
-#communaute{
+#fellowship{
     border: 1px solid blue;
     height: 500px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
 }
 
-#quete{
+#quest{
     border: 1px solid green;
     height: 500px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
 }
 
-#equipe{
+#team{
     border: 1px solid yellow;
     height: 500px;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
