@@ -41,3 +41,8 @@ li a{
 li {
     list-style-type: none;
 }
+
+footer{
+    height: 200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
