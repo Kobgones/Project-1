@@ -4,11 +4,20 @@ body, html {
     min-height: 100%;
     overflow-x: hidden;
   }
-  
+  section{
+    height: 100vh;
+  }
+  #quest{
+    background-image: url(./img/map.jpeg);
+    border-radius: 20px;
+    background-size: cover;
+    
+  }
+
   body {
     font-family: sans-serif;
     padding: 50px;
-    background-image: url(./img/background-home.jpeg);    
+    background-color: #000000;
     line-height: 1.4;
   }
   img {
