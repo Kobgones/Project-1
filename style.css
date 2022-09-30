@@ -150,3 +150,162 @@ body, html {
     }
   }
   
+
+#fellowship {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    position: relative;
+    width: auto;
+    height: 350px;
+    border-radius: 5%;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 5%;
+    transition: 0.5s;
+}
+
+.card .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.card .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/background-perso.jpeg);
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle:before {
+    background-image: url(./img/background-home.jpeg);
+    clip-path: circle(400px at center);
+}
+
+.card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    top: 70%;
+    left: 80%;
+    height: 60%;
+}
+
+.card .content {
+    position: relative;
+    width: 50%;
+    left: 0;
+    padding: 1% 1% 5% 5%;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .content h2 {
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 190%;
+}
+
+.card .content p {
+    color:aliceblue;
+    font-size: 85%;
+
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 600px;
+        height: 350px;
+        align-items: center;
+    }
+    .card:hover img {
+        left: 80%;
+        height: 500px;
+    }
+    .card .content {
+        left: 20%;
+        padding: 10px 20px 20px 30px;
+    }
+    .card .content h2 {
+        font-size: 2em;
+    }
+    .card .content p {
+        font-size: initial;
+    }
+}
+* {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.941));
+    margin: 0;
+    padding: 0;
+    font-family: ringbearer;
+}
+
+#banner {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
+
+header div h1{
+    text-align: center; 
+    color: gold;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    transition: all 0.3s ease-out;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: gold;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+    height: 30px;
+}
+
+li a{
+    color: gold;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer{
+    height: 200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
