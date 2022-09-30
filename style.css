@@ -109,3 +109,51 @@
         font-size: initial;
     }
 }
+* {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.941));
+    margin: 0;
+    padding: 0;
+    font-family: ringbearer;
+}
+
+#banner {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
+
+header div h1{
+    text-align: center; 
+    color: gold;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    transition: all 0.3s ease-out;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: gold;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+    height: 30px;
+}
+
+li a{
+    color: gold;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer{
+    height: 200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+}
