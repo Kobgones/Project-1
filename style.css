@@ -31,6 +31,38 @@ header {
     flex-direction: column;
     justify-content: space-around;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+  }
+  #quest{
+    background-image: url(./img/map.jpeg);
+    border-radius: 20px;
+    background-size: cover;
+  }
+
+  img {
+    max-height: fit-content;
+  }
+  
+  .title {
+    font-size: 25px;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .item {
+    margin: 40px 10px;
+    background-color: #fff;
+    box-shadow: 0 15px 35px #3232321a,0 5px 15px #0000001a;
+    transition: transform 0.3s;
+    transform: translate3d(0, -1px, 0);
+  }
+  
+  .item:hover  {
+    transform: translate3d(0, -10px, 0);
+  }
+  
+  .item img {
+    display: block;
     width: 100%;
 }
 .sticky {
@@ -326,5 +358,5 @@ CAROUSEL
 }
 footer{
     height: 200px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+    background-color: red;
 }
