@@ -1,3 +1,7 @@
+window.addEventListener("scroll", function(){
+  const header = document.querySelector("header");
+  header.classlist.toggle("sticky", window.scrollY > 0)
+})
 class Carousel {
     /**
      * This callback type is called `requestCallback` and is displayed as a global symbol.
