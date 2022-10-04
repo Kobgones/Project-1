@@ -11,15 +11,8 @@ body, html {
     background-image: url(./img/map.jpeg);
     border-radius: 20px;
     background-size: cover;
-    
   }
 
-  body {
-    font-family: sans-serif;
-    padding: 50px;
-    background-color: #000000;
-    line-height: 1.4;
-  }
   img {
     max-height: fit-content;
   }
@@ -273,12 +266,13 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+    background-color: red;
 }
 
 header div h1{
     text-align: center; 
     color: gold;
+    background-color: red;
 }
 
 nav{
@@ -307,5 +301,5 @@ li {
 
 footer{
     height: 200px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.872), rgba(0, 0, 0, 0.751));
+    background-color: red;
 }
