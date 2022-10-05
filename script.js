@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-const stepCard = function (title, imgURL, )
-=======
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 // Get the navbar
@@ -307,4 +304,3 @@ modalTriggers.forEach(trigger =>
 function toggleModal(){
   modalContainer.classList.toggle("active")
 }
->>>>>>> Stashed changes
