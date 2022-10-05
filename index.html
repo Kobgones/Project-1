@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/anneau.png" />
-  <title>La Communauté de l'anneau</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/anneau.png"/>
+    <title>La Communauté de l'anneau</title>
 </head>
 
 <body>
-  <header>
-   
+<header>
       <h1><a href="#banner"></a>La Communauté de l'Anneau</h1>
-      <nav class="sticky">
+      <nav id="navbar">
         <ul>
-          <li><a href="#banner">Accueil</a></li>
+          <li><a href="#home">Accueil</a></li>
           <li><a href="#fellowship">La Communauté</a></li>
           <li><a href="#quest">La Quête</a></li>
           <li><a href="#team">l'Equipe</a></li>
         </ul>
       </nav>
- 
   </header>
 
+
     <section id="home">
-        
+      <div id="vid">
+      <video id="video" controls autoplay>
+        <source src="./img/The-ring.mp4" type="video/mp4"></source>
+      </video>
+    </div>
     </section>
+
     <section id="fellowship">
     <div class="container-main">
       <div class="card card--visible">
@@ -35,8 +38,7 @@
         <div class="content">
           <h2 class="card-name">Gandalf</h2>
           <p class="description">
-            Gandalf le Gris, plus tard connu sous le nom de Gandalf le Blanc, et
-            initialement nommé Olórin (en quenya) ou Mithrandir (en sindarin),
+            Gandalf le Gris, plus tard connu sous le nom de Gandalf le Blanc, ou Mithrandir (en sindarin),
             était un Istar (Magicien), envoyé sur la Terre du Milieu au
             Troisième Âge pour combattre la menace de Sauron. Il a rejoint la
             Compagnie de Thorin pour récupérer la Montagne Solitaire des griffes
@@ -46,8 +48,9 @@
           </p>
         </div>
         <img class="card-img" src="./img/Gandalf1.png" />
-        <button id="push-me">Push me</button>
-
+       <div class="click-me">
+        <button id="audio1">Click me</button>
+      </div>
       </div>
       <div class="card">
         <div class="circle"></div>
@@ -62,6 +65,9 @@
           </p>
         </div>
         <img class="card-img" src="./img/Frodon.png" />
+        <div class="click-me">
+          <button id="audio2">Click me</button>
+        </div>
       </div>
       <div class="card">
         <div class="circle"></div>
@@ -74,7 +80,9 @@
           </p>
         </div>
         <img class="card-img" src="./img/Sam.png" />
-      </div>
+        <div class="click-me">
+          <button id="audio3">Click me</button>
+        </div>      </div>
       <div class="card">
         <div class="circle"></div>
         <div class="content">
@@ -82,8 +90,7 @@
           <p class="description">
             Aragorn est fils d'Arathorn et de Gilraen, petit-fils d'Arador.
             Avant la Guerre de l'Anneau, il est le chef des Rôdeurs du Nord,
-            surnommé Grand-Pas. En tant que descendant d'Isildur ainsi que
-            d'Anarion, il est l'héritier des trônes d'Arnor et de Gondor. En
+            surnommé Grand-Pas. En tant que descendant d'Isildur, il est l'héritier des trônes d'Arnor et de Gondor. En
             tant que descendant des Rois de Númenor, une vie plus longue lui est
             accordée : il ne mourra qu'à l'âge de 210 ans. Il est appelé Dúnadan
             par les Elfes, ce qui signifie 'Homme de l'Ouest' ou 'Numénoréen' en
@@ -91,194 +98,204 @@
           </p>
         </div>
         <img class="card-img" src="./img/Aragorn.png" />
-    </div>
-    <div class="card">
-      <div class="circle"></div>
-      <div class="content">
-        <h2 class="card-name">Legolas</h2>
-        <p class="description">
-          Legolas Vertefeuille est un Elfe Sinda qui faisait partie de la
-          Communauté de l'Anneau au Troisième Âge. Fils du roi elfique
-          Thranduil du Royaume Sylvestre, dont il était le prince, un messager
-          et un maître archer. Avec sa vue perçante, son ouïe sensible et son
-          excellente maîtrise de l'arc, Legolas a été précieux pour la
-          Communauté durant la Quête de l'Anneau à travers la Terre du Milieu.
-          Il était bien connu pour être devenu ami avec le nain Gimli, malgré
-          leurs différences de longue date.
-        </p>
+        <div class="click-me">
+          <button id="audio4">Click me</button>
+        </div>
       </div>
-      <img class="card-img" src="./img/Legolas1.png" />
-    </div>
-    <div class="card">
-      <div class="circle"></div>
-      <div class="content">
-        <h2 class="card-name">Gimli</h2>
-        <p class="description">
-          Gimli est un nain, un des protagonistes du Seigneur des anneaux de
-          J. R. R. Tolkien. Nain, fils de Glóin, il fait partie de la
-          Communauté de l'Anneau.
-        </p>
-    </div>
-    <div class="card">
-      <div class="circle"></div>
-      <div class="content">
-        <h2 class="card-name">Merry</h2>
-        <p class="description">
-          Meriadioc Brandebouc dit le Magnifique, ou Merry pour les intimes,
-          est un Hobbit de la Comté. Il est l'un des neuf Marcheurs de la
-          Communauté de l'Anneau et, avec Éowyn, accomplit l'acte héroïque de
-          terrasser le Seigneur des Nazgûls lors de la Bataille des Champs du
-          Pelennor.
-        </p>
-    </div>
-    <img class="card-img" src="./img/Merry2.png" />
-    </div>
-    <div class="card">
-      <div class="circle"></div>
-      <div class="content">
-        <h2 class="card-name">Pippin</h2>
-        <p class="description">
-          Peregrin Touque, dit Pippin est un hobbit de la Comté et l'un des
-          neuf Marcheurs de la Communauté de l'Anneau. Il est d'un naturel
-          gaffeur mais sait se montrer étonnamment sérieux lorsque les
-          circonstances l'exigent.
-        </p>
+      <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+          <h2 class="card-name">Legolas</h2>
+          <p class="description">
+            Legolas Vertefeuille est un Elfe Sinda qui faisait partie de la
+            Communauté de l'Anneau au Troisième Âge. Fils du roi elfique
+            Thranduil du Royaume Sylvestre, dont il était le prince, un messager
+            et un maître archer. Avec sa vue perçante, son ouïe sensible et son
+            excellente maîtrise de l'arc, Legolas a été précieux pour la
+            Communauté durant la Quête de l'Anneau à travers la Terre du Milieu.
+            Il était bien connu pour être devenu ami avec le nain Gimli.
+          </p>
+        </div>
+        <img class="card-img" src="./img/Legolas1.png" />
+        <div class="click-me">
+          <button id="audio5">Click me</button>
+        </div>
       </div>
-      <img class="card-img" src="./img/Pippin2.png" />
-    </div>
-    <div class="card">
-      <div class="circle"></div>
-      <div class="content">
-        <h2 class="card-name">Boromir</h2>
-        <p class="description">
-          Boromir est un Homme vivant au Troisième Âge de la Terre du Milieu.
-          Il est le fils de l'intendant Denethor II ainsi qu'un membre de la
-          Communauté de l'Anneau.
-        </p>
+      <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+          <h2 class="card-name">Gimli</h2>
+          <p class="description">
+            Gimli est un nain, un des protagonistes du Seigneur des anneaux de
+            J. R. R. Tolkien. Nain, fils de Glóin, il fait partie de la
+            Communauté de l'Anneau.
+          </p>
+        </div>
+        <img class="card-img" src="./img/Gimli.png" />
+        <div class="click-me">
+          <button id="audio6">Click me</button>
+        </div>
       </div>
-      <img class="card-img" src="./img/Boromir3.png" />
+      <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+          <h2 class="card-name">Merry</h2>
+          <p class="description">
+            Meriadioc Brandebouc dit le Magnifique, ou Merry pour les intimes,
+            est un Hobbit de la Comté. Il est l'un des neuf Marcheurs de la
+            Communauté de l'Anneau et, avec Éowyn, accomplit l'acte héroïque de
+            terrasser le Seigneur des Nazgûls lors de la Bataille des Champs du
+            Pelennor.
+          </p>
+        </div>
+        <img class="card-img" src="./img/Merry2.png" />
+        <div class="click-me">
+          <button id="audio7">Click me</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+          <h2 class="card-name">Pippin</h2>
+          <p class="description">
+            Peregrin Touque, dit Pippin est un hobbit de la Comté et l'un des
+            neuf Marcheurs de la Communauté de l'Anneau. Il est d'un naturel
+            gaffeur mais sait se montrer étonnamment sérieux lorsque les
+            circonstances l'exigent.
+          </p>
+        </div>
+        <img class="card-img" src="./img/Pippin2.png" />
+        <div class="click-me">
+          <button id="audio8">Click me</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="circle"></div>
+        <div class="content">
+          <h2 class="card-name">Boromir</h2>
+          <p class="description">
+            Boromir est un Homme vivant au Troisième Âge de la Terre du Milieu.
+            Il est le fils de l'intendant Denethor II ainsi qu'un membre de la
+            Communauté de l'Anneau.
+          </p>
+        </div>
+        <img class="card-img" src="./img/Boromir3.png" />
+        <div class="click-me">
+          <button id="audio9">Click me</button>
+        </div>
+      </div>
+       <div class="card-actions">
+        <button id="button-prev" aria-label="Previous slide"><</button>
+        <button id="button-next" aria-label="Next slide">></button>
+       </div>
     </div>
-    <div class="card-actions">
-      <button id="button-prev" aria-label="Previous slide"><</button>
-      <button id="button-next" aria-label="Next slide">></button>
-     </div>
-  </div>
-  </section>
-  <section id="quest">
-    <div class="container">
-      <div class="title">LA QUÊTE</div>
-
-      <div id="carousel1">
-
-        <div class="item">
-          <div class="item__image">
-            <img src="img/IMG_1254.JPG" alt="">
-          </div>
-          <div class="item__body">
-            <div class="item__title">
-              LE MORDOR
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le carousel
-            </div>
+      </section>
+  
+      <section id="quest">
+        <div class="modal-container">
+          <div class="overlay modal-trigger"></div>
+          <div class="modal">
+            <button class="close-modal
+             modal-trigger">X</button>
+            <h1>Titre</h1>
+            <p>
+              Le lorem ipsum est, en imprimerie, une suite de mots sans
+              signification utilisée à titre provisoire pour calibrer une mise en
+              page, le texte définitif venant remplacer le faux-texte dès qu'il est
+              prêt ou que la mise en page est achevée. Généralement, on utilise un
+              texte en faux latin, le Lorem ipsum ou Lipsum.
+            </p>
+            <img id="map-img" src="./img/map.jpeg" alt="map">
           </div>
         </div>
+        <div class="container">
+          <div class="title">LA QUÊTE</div>
         
-        <div class="item">
-          <div class="item__image">
-            <img src="img/IMG_1254.JPG" alt="">
-          </div>
-          <div class="item__body">
-            <div class="item__title">
-              RIVENDELL
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le carousel
+            <div id="carousel1">
+              
+        
+              <div class="item">
+                <div class="item__image">
+                  <img src="./img/La comté.jpg" alt="">
+                </div>
+                <div class="item__body">
+                  <div class="item__title">
+                    Mon titre 1
+                  </div>
+                  <div class="item__description">
+                    Ici une petite description pour tester le carousel
+                  </div>
+                </div>
+              </div>
+        
+              <div class="item">
+                <div class="item__image">
+                  <img src="./img/Rivendell.jpg" alt="">
+                </div>
+                <div class="item__body">
+                  <div class="item__title">
+                    Mon titre 2
+                  </div>
+                  <div class="item__description">
+                    Ici une petite description pour tester le carousel
+                  </div>
+                </div>
+              </div>
+        
+              <div class="item">
+                <div class="item__image">
+                  <img src="img/Mines de la Moria.jpg" alt="">
+                </div>
+                <div class="item__body">
+                  <div class="item__title">
+                    Mon titre 3
+                  </div>
+                  <div class="item__description">
+                    Ici une petite description pour tester le carousel
+                  </div>
+                </div>
+              </div>
+        
+              <div class="item">
+                <div class="item__image">
+                  <img src="img/Orthanc.jpg" alt="">
+                </div>
+                <div class="item__body">
+                  <div class="item__title">
+                    Mon titre 4
+                  </div>
+                  <div class="item__description">
+                    Ici une petite description pour tester le carousel
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item__image">
+                  <img src="img/mordor.jpeg" alt="">
+                <div class="item__body">
+                  <div class="item__title">
+                    Mon titre 5
+                  </div>
+                  <div class="item__description">
+                    Ici une petite description pour tester le carousel
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="item">
-          <div class="item__image">
-            <img src="img/IMG_1254.JPG" alt="">
-          </div>
-          <div class="item__body">
-            <div class="item__title">
-              LA MORIA
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le carousel
-            </div>
-          </div>
-        </div>
+      </section>
+    
+    <section id="team">
 
-        <div class="item">
-          <div class="item__image">
-            <img src="img/IMG_1254.JPG" alt="">
-          </div>
-          <div class="item__body">
-            <div class="item__title">
-              NUMENOR
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le carousel
-            </div>
-          </div>
-        </div>
+    </section>
 
-        <div class="item">
-          <div class="item__image">
-            <img src="img/IMG_1254.JPG" alt="">
-          </div>
-          <div class="item__body">
-            <div class="item__title">
-              LA COMTÉ
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le carousel
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item__image">
-            <img src="img/IMG_1254.JPG" alt="">
-          </div>
-          <div class="item__body">
-            <div class="item__title">
-              MONTAGNE DU DESTIN
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le carousel
-            </div>
-          </div>
-        </div>
-
-        <div class="item">
-          <div class="item__image">
-            <img src="img/IMG_1254.JPG" alt="">
-          </div>
-          <div class="item__body">
-            <div class="item__title">
-              LES MARECAGES
-            </div>
-            <div class="item__description">
-              Ici une petite description pour tester le carousel
-            </div>
-          </div>
-        </div>
-
-      </div>
-  </section>
-  <section id="team">
-
-  </section>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 <footer>
-  <div>
-
-  </div>
+    <div>
+        
+    </div>a
 </footer>
-
 </html>
